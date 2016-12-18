@@ -1,11 +1,9 @@
-import apis from 'apis';
+import * as apiexample from 'apiexample';
+import * as counter from 'counter';
 import store from 'rootStore';
-import actions from 'actions';
-import models from 'models';
 
 export default {
-  apis,
-  store,
-  actions,
-  models
+  apiexample,
+  counter,
+  store
 }

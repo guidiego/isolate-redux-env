@@ -1,7 +1,8 @@
-import example from 'reducers/example';
+import { reducer as counter} from 'counter';
+import { reducer as apiexample} from 'apiexample';
 
 import { combineReducers } from 'redux-immutable'
 
 export default combineReducers({
-  example
+  counter, apiexample
 })
