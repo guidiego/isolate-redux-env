@@ -1,5 +1,5 @@
-import exampleApi from 'apis/example'
+import twitter from 'apis/twitter'
 
 export default {
-  example
+  twitter
 }
