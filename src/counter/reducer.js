@@ -1,17 +1,9 @@
-import { Reducer, reducerFunction } from 'common/utils';
+import { reducerFunction } from 'common/utils';
 
-class CounterReducer extends Reducer{
-  constructor() {
-    super()
-  }
 
-  increase(payload, state) {
-    return state + 1
-  }
+export const increase = (payload, state) => state + 1;
+export const decrease = (payload, state) => state - 1;
 
-  decrease(payload, state) {
-    return state - 1
-  }
-}
-
-export default reducerFunction(CounterReducer, 0);
+export default reducerFunction({
+  increase, decrease,
+}, 0);

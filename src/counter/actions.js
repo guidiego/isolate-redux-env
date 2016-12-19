@@ -1,6 +1,6 @@
 import { INCREASE, DECREASE } from './constants';
 
-export const increase = { type: INCREASE }
-export const decrease = { type: DECREASE }
+export const increase = { type: INCREASE };
+export const decrease = { type: DECREASE };
 
-export default { increase, decrease }
+export default { increase, decrease };

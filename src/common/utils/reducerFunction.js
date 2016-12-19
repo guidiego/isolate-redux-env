@@ -1,6 +1,11 @@
-export const reducerFunction = (Reducer, initialState) => {
-  const r = new Reducer();
-  return (state = initialState, action) => r.call(action.type, action.payload, state)
-}
+export const reducerFunction = (reducer, initialState) => (state = initialState, action) => {
+  const { type, payload, ...others } = action;
+
+  if (!reducer[type]) {
+    return state;
+  }
+
+  return reducer[action.type](payload, state, others);
+};
 
 export default reducerFunction;

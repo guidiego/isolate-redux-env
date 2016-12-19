@@ -1,8 +1,8 @@
-import reqresinManifest from './reqresin'
-import mappersmith from "mappersmith";
+import mappersmith from 'mappersmith';
+import reqresinManifest from './reqresin';
 
 mappersmith.Env.USE_PROMISES = true;
 
-export const reqresin = mappersmith.forge(reqresinManifest)
+export const reqresin = mappersmith.forge(reqresinManifest);
 
-export default { reqresin }
+export default { reqresin };

@@ -1,6 +1,5 @@
-const logMiddleware = store => next => action => {
-  console.log("LOG MIDDLEWARE")
-  next(action)
-}
+const logMiddleware = () => next => (action) => {
+  next(action);
+};
 
 export default logMiddleware;

@@ -1,0 +1,12 @@
+language: node_js
+node_js:
+  - "6"
+before_install:
+  - npm install -g yarn
+install:
+  - yarn install
+script:
+  - yarn lint
+  - yarn test:cov
+after_success:
+  - yarn coveralls
