@@ -1,6 +1,6 @@
 {
   "name": "isolate-redux-env",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple redux (and only redux) env",
   "main": "dist/bundle.js",
   "repository": "git@github.com:guidiego/isolate-redux-env.git",
